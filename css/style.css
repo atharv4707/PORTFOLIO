@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+.hero {
+  padding: 50px 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 58, 87, 0.75)),
+    url("../images/background/james-harrison-vpOeXr5wmR4-unsplash.jpg") no-repeat center / cover;
+}
+
+.heading-text {
+  font-size: clamp(1.5rem, 8vw, 3.5rem);
+}
+
+.section-heading {
+  font-size: clamp(1.2rem, 8vw, 3rem);
+}
+
+.bg-card {
+  height: 200px;
+  background-color: rgb(69, 69, 69);
+  color: white;
+}
+
+.skill-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #FFF3CD;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(87, 87, 87, 0.14);
+  backdrop-filter: blur(18px);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
+}
+
+.skill-card:hover {
+  border-color: #FFC107;
+  transform: translateY(-8px);
+  box-shadow: 0 28px 90px rgba(46, 46, 46, 0.16);
+}
+
+.icon-badge i {
+  font-size: 1.5rem;
+}
+
+.skill-tags {
+  min-height: 140px;
+}
+
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 11px;
+  border: 1px solid #FFE69C;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  margin: 5px;
+  margin-left: 0;
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.75);
+  min-height: 510px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: #FFC107;
+}
+
+.project-card {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 15, 25, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-body {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tags {
+  margin-bottom: 12px;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 12px;
+  color: #475569;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-link-btn {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-link-btn.btn-live {
+  background: #FFC107;
+  color: #000000 !important;
+}
+
+.project-link-btn.btn-live:hover {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  opacity: 0.9;
+}
+
+.project-link-btn.btn-github {
+  background: transparent;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  color: #0f172a !important;
+}
+
+.project-link-btn.btn-github:hover {
+  border-color: #FFC107;
+  background-color: #f1f5f9;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 100vh;
+  }
+}

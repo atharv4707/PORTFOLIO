@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharv Shivarkar | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fs-4" href="#home">Atharv Shivarkar</a>
+
+      <!-- Mobile Offcanvas Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OffCanvas Navigation -->
+  <div class="offcanvas offcanvas-end text-bg-dark" id="myMenu">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title fs-3 fw-normal" id="myMenuLabel">Atharv Shivarkar</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" data-bs-dismiss="offcanvas"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-bs-dismiss="offcanvas"> About </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#education" data-bs-dismiss="offcanvas"> Education </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-bs-dismiss="offcanvas"> Skills </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" data-bs-dismiss="offcanvas"> Projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <h3 class="fs-6">Social Profiles</h3>
+      <div class="d-flex gap-2">
+        <a href="https://github.com/" class="btn btn-outline-light" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" class="btn btn-outline-light" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:hbhalerao.ecti@gmail.com" class="btn btn-outline-light">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <main>
+
+    <!-- Hero Section -->
+    <section class="container-fluid hero" id="home">
+      <div class="container h-100">
+        <div class="row align-items-center h-100" id="hero">
+          <div class="col-12 col-lg-7">
+            <p class="fs-5 text-white">Welcome to my space</p>
+            <h1 class="text-white fw-normal heading-text">Hi, I'm Atharv Shivarkar</h1>
+            <h2 class="text-white fw-normal">I <span id="typing-text" class="text-warning"></span><span
+                class="typing-cursor text-warning fw-bold">|</span></h2>
+            <p class="lead text-white py-3">Computer Engineering student and developer obsessed with turning crazy ideas into working products. I build with <strong>AI, full-stack technologies, and modern web tools</strong>—from hackathon prototypes to projects designed to solve real problems. Always learning. Always building. Always shipping.</p>
+            <div>
+              <a href="#projects" class="btn border border-1 rounded-pill shadow-sm me-2 bg-light">
+                <i class="fa-regular fa-file-lines"></i>View Projects
+              </a>
+              <a href="#contact" class="btn btn-warning border-warning border border-1 rounded-pill shadow-sm ">
+                <i class="fas fa-paper-plane me-2"></i>Hire Me
+              </a>
+
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div>
+              <img src="images/illustrations/AtharvShivarkar.jpeg" alt="Atharv Shivarkar Portrait Headshot"
+                class="rounded rounded-circle border border-5 shadow-sm mx-auto d-block" width="300">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="container-fluid py-5" id="about">
+      <div class="container py-5">
+        <p class="text-center">Discovery</p>
+        <h2 class="text-center fw-normal section-heading">About Me</h2>
+        <p class="w-75 mx-auto text-center">A brief overview of who I am, my philosophy, and what drives my development
+          process.</p>
+
+        <div class="row py-5 align-items-center">
+          <div class="col-12 col-lg-6 mb-5">
+            <div class="bg-light p-4 rounded rounded-3 border border-3 border-warning-subtle">
+              <h3 class="pb-5"><i class="fa-regular fa-user text-warning"></i> My Story</h3>
+              <p class="mb-3 fs-4 lead">Hi, I'm <strong>Atharv Shivarkar</strong> — a Computer Engineering student who enjoys turning <em>"what if?"</em> into <em>"it actually works."</em></p>
+              <p class="fs-5 mb-3">I like building things from the ground up — whether it's an AI-powered application, a full-stack platform, a developer tool, or an experimental Web3 project. I'm constantly exploring new technologies, participating in hackathons, and pushing myself beyond what I already know.</p>
+              <p class="fs-5">For me, development isn't just about writing code. It's about <strong>solving problems, experimenting with ideas, learning from failures, and shipping something real.</strong></p>
+              
+              <div class="py-4">
+                <p class="fs-4">What I Build</p>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3">
+                      <div class="icon-badge d-inline-block bg-warning p-2 rounded" style="min-width: fit-content;">
+                        <i class="fa-solid fa-brain"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-2">AI & Machine Learning</h5>
+                        <p class="mb-0" style="font-size: 0.9rem;">Building intelligent applications and experimenting with AI models, LLMs, and computer vision.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3">
+                      <div class="icon-badge d-inline-block bg-warning p-2 rounded" style="min-width: fit-content;">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-2">Full-Stack Development</h5>
+                        <p class="mb-0" style="font-size: 0.9rem;">Creating complete products with modern frontend, backend, APIs, databases, and cloud platforms.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3">
+                      <div class="icon-badge d-inline-block bg-warning p-2 rounded" style="min-width: fit-content;">
+                        <i class="fa-solid fa-lightbulb"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-2">Problem Solving</h5>
+                        <p class="mb-0" style="font-size: 0.9rem;">Breaking complex problems into smaller pieces and turning them into practical, usable solutions.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3">
+                      <div class="icon-badge d-inline-block bg-warning p-2 rounded" style="min-width: fit-content;">
+                        <i class="fa-solid fa-rocket"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-2">Emerging Tech</h5>
+                        <p class="mb-0" style="font-size: 0.9rem;">Exploring Web3, blockchain, automation, and whatever technology catches my curiosity next.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="ps-lg-3">
+              <div class="row g-4">
+                <div class="col-6 text-center">
+                  <div class="bg-card d-flex flex-column justify-content-center align-items-center rounded rounded-3">
+                    <h2>
+                      <span class="counter"> 50 </span>
+                      <span>+</span>
+                    </h2>
+                    <p>Completed Projects</p>
+                  </div>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="bg-card d-flex flex-column justify-content-center align-items-center rounded rounded-3">
+                    <h2>
+                      <span class="counter"> 99 </span>
+                      <span>%</span>
+                    </h2>
+                    <p>Client Satisfaction</p>
+                  </div>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="bg-card d-flex flex-column justify-content-center align-items-center rounded rounded-3">
+                    <h2>
+                      <span class="counter"> 10 </span>
+                      <span>+</span>
+                    </h2>
+                    <p>Years Experience</p>
+                  </div>
+                </div>
+                <div class="col-6 text-center">
+                  <div class="bg-card d-flex flex-column justify-content-center align-items-center rounded rounded-3">
+                    <h2>
+                      <span class="counter"> 50 </span>
+                      <span>k+</span>
+                    </h2>
+                    <p>Lines of Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="container-fluid bg-light py-5" id="skills">
+      <div class="container py-5">
+        <p class="text-center">Technical Toolkit</p>
+        <h2 class="text-center fw-normal section-heading">Skills</h2>
+        <p class="w-75 mx-auto text-center">Organized across frontend, backend, UI/UX, and database development.</p>
+
+        <div class="row py-5 align-items-center">
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                  <span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>C/C++</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-regular fa-window-restore"></i>
+                </div>
+                <h3>Frontend</h3>
+                <div class="skill-tags">
+                  <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>HTML</span><span>CSS</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                  <span>Node.js</span><span>FastAPI</span><span>Flask</span><span>Firebase</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>AI/ML & Web3</h3>
+                <div class="skill-tags">
+                  <span>TensorFlow</span><span>Keras</span><span>YOLO</span><span>Genkit</span><span>Gemini</span><span>OpenAI</span><span>Aptos</span><span>Move</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                  <span>MongoDB</span><span>Firebase</span><span>Supabase</span><span>SQL</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="skill-card bg-white p-4">
+              <article>
+                <div class="icon-badge d-inline-block bg-warning p-2 mb-4 rounded">
+                  <i class="fa-solid fa-tools"></i>
+                </div>
+                <h3>Tools & Platforms</h3>
+                <div class="skill-tags">
+                  <span>Git</span><span>GitHub</span><span>Vercel</span><span>Android Studio</span><span>Figma</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+
+    <section class="container-fluid bg-secondary-subtle py-5" id="projects">
+      <div class="container py-5">
+        <p class="text-center">Creations</p>
+        <h2 class="text-center fw-normal section-heading">Featured Projects</h2>
+        <p class="w-75 mx-auto text-center">Explore a selection of recent full-stack applications showcasing
+          integration, responsive designs, and query optimizations.</p>
+
+        <section class="project-wrapper owl-carousel owl-theme py-5">
+          <article class="glass-card project-card" id="project-card-1">
+            <div class="project-image-container">
+              <img src="images/illustrations/kisansathi.png"
+                alt="Kisan Sathi AI-powered Agricultural Assistant" class="project-image" id="img-project-1">
+              <div class="project-overlay">
+                <span class="badge bg-warning text-dark px-3 py-2 fs-7">AI/ML App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Genkit</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">AI/ML</span>
+              </div>
+              <h3 class="project-title" id="title-project-1">Kisan Sathi</h3>
+              <p class="project-desc" id="desc-project-1">
+                AI-powered agricultural assistant for crop disease detection and personalized farming guidance. Helps farmers identify crop diseases and receive tailored recommendations for better yields.
+              </p>
+              <div class="project-actions">
+                <a href="https://kisan-spectra.vercel.app/" target="_blank" class="project-link-btn btn-live" id="link-live-1">
+                  <i class="fas fa-external-link-alt"></i>Live Demo
+                </a>
+                <a href="https://github.com/atharv4707/Kisan-Sathi" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn btn-github" id="link-git-1">
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" id="project-card-3">
+            <div class="project-image-container">
+              <img src="images/illustrations/badgedrop.png"
+                alt="Chainfluence Web3 Application" class="project-image"
+                id="img-project-3">
+              <div class="project-overlay">
+                <span class="badge bg-warning text-dark px-3 py-2 fs-7">Web3 Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Aptos</span>
+                <span class="project-tag">Move</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">TypeScript</span>
+              </div>
+              <h3 class="project-title" id="title-project-3">Chainfluence / BadgeDrop</h3>
+              <p class="project-desc" id="desc-project-3">
+                Web3 projects exploring blockchain-based interactions, NFT badges, and decentralized applications. Building innovative solutions in the blockchain and Web3 ecosystem.
+              </p>
+              <div class="project-actions">
+                <a href="https://badge-drop.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn btn-live" id="link-live-3">
+                  <i class="fas fa-external-link-alt"></i>Live Demo
+                </a>
+                <a href="https://github.com/atharv4707/-BadgeDrop" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn btn-github" id="link-git-3">
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card project-card" id="project-card-4">
+            <div class="project-image-container">
+              <img src="images/illustrations/moodbuddy.png"
+                alt="Mood Buddy Mental Health Tracking Application" class="project-image" id="img-project-4">
+              <div class="project-overlay">
+                <span class="badge bg-warning text-dark px-3 py-2 fs-7">Wellness App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Tailwind CSS</span>
+              </div>
+              <h3 class="project-title" id="title-project-4">Mood Buddy</h3>
+              <p class="project-desc" id="desc-project-4">
+                A mental health and mood tracking application that helps users monitor their emotional well-being, track daily moods, and gain insights into their mental health patterns over time.
+              </p>
+              <div class="project-actions">
+                <a href="https://mood-buddy-three.vercel.app/" target="_blank" class="project-link-btn btn-live" id="link-live-4">
+                  <i class="fas fa-external-link-alt"></i>Live Demo
+                </a>
+                <a href="https://github.com/atharv4707/Mood-Buddy" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn btn-github" id="link-git-4">
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container-fluid py-5" id="contact">
+      <div class="container py-5">
+        <p class="text-center">Get In Touch</p>
+        <h2 class="text-center fw-normal section-heading">Message Me</h2>
+        <p class="w-75 mx-auto text-center">Have a project design in mind or want to talk about opportunities? Fill out
+          the contact form below and I'll respond within 24 hours.</p>
+
+        <div class="row gy-5 pt-5">
+          <div class="col-lg-5">
+            <div class="rounded rounded-3 bg-light shadow border border-warning p-4">
+              <h3 class="mb-4 fw-bold">Contact Information</h3>
+
+              <div>
+                <div class="contact-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Email Me</h5>
+                  <p><a class="text-dark text-decoration-none"
+                      href="mailto:atharv4707@gmail.com">atharv4707@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Call Me</h5>
+                  <p><a class="text-dark text-decoration-none" href="tel:+917420860886">+91 74208 60886</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-pin"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Location</h5>
+                  <p>Pune, Maharashtra, India</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Available For</h5>
+                  <p>Internships • Collaborations • Remote Opportunities</p>
+                </div>
+              </div>
+
+              <!-- Social Media Icon Links -->
+              <div class="social-links">
+                <a href="https://github.com" target="_blank" class="me-3 text-decoration-none text-black fs-4"
+                  aria-label="GitHub Profile">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/atharv-shivarkar-05366726b" target="_blank" class="me-3 text-decoration-none text-black fs-4"
+                  aria-label="LinkedIn Profile">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="rounded rounded-3 bg-light shadow border border-warning p-4">
+              <h3 class="mb-4 fw-bold">Send a Message</h3>
+              <div id="formFeedback"></div>
+
+              <form id="contactForm" novalidate="">
+                <div class="row g-3">
+                  <div class="col-md-6 form-group">
+                    <label for="formName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control form-control-custom" id="formName" placeholder="John Doe"
+                      required="">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="col-md-6 form-group">
+                    <label for="formEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control form-control-custom" id="formEmail"
+                      placeholder="johndoe@example.com" required="">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-12 form-group">
+                    <label for="formSubject" class="form-label">Subject</label>
+                    <input type="text" class="form-control form-control-custom" id="formSubject"
+                      placeholder="Project Inquiry / Job Opportunity" required="">
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+
+                  <div class="col-12 form-group">
+                    <label for="formMessage" class="form-label">Message</label>
+                    <textarea class="form-control form-control-custom" id="formMessage"
+                      placeholder="Hi, let's discuss..." required=""></textarea>
+                    <div class="invalid-feedback">Please enter your message text.</div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-warning w-100">Send Message <i
+                        class="bi bi-send ms-2"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-subtle py-4 text-center">
+      <div class="container">
+        <div class="pb-4">
+          <i class="bi bi-terminal-fill h1 text-gradient me-2"></i>Atharv Shivarkar</span>
+        </div>
+        <div class="pb-4">
+          <ul class="nav list-unstyled justify-content-center">
+            <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <p class="footer-text mb-0">&copy; 2026 Full-Stack Developer & AI/ML Enthusiast. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
